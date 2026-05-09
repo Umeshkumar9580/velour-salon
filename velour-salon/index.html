@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velour Salon — Luxury Beauty Studio in Meerut. Hair, Makeup, Spa, Nails, Bridal packages." />
+  <meta name="keywords" content="salon, luxury salon, beauty studio, hair, makeup, spa, bridal, Meerut" />
+  <title>Velour Salon — Luxury Beauty Studio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">Velour<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/services.html">Services</a></li>
+      <li><a href="#booking">Book Now</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#booking" class="nav-cta">Book Appointment</a>
+    <button class="hamburger" id="hamBtn" onclick="toggleMobile()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" onclick="toggleMobile()">Home</a>
+    <a href="pages/about.html" onclick="toggleMobile()">About</a>
+    <a href="pages/services.html" onclick="toggleMobile()">Services</a>
+    <a href="#booking" onclick="toggleMobile()">Book Now</a>
+    <a href="#contact" onclick="toggleMobile()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Luxury Beauty Studio</div>
+      <h1>Where Beauty<br>Becomes <em>Art</em></h1>
+      <p class="hero-sub">Indulge in a transformative experience crafted for the modern woman. Premium care, timeless elegance.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn-primary">Book Appointment</a>
+        <a href="pages/services.html" class="btn-outline">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section">
+    <div class="fade-in">
+      <p class="section-label">Why Choose Us</p>
+      <h2 class="section-title">Crafted with <em>Passion</em>,<br>Delivered with Precision</h2>
+      <p class="section-sub">Every visit is a ritual. We combine luxury products, expert techniques, and heartfelt service to create your most beautiful self.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <div class="feature-icon"><i class="fas fa-award"></i></div>
+        <h3>Expert Stylists</h3>
+        <p>Our certified professionals bring 10+ years of experience and ongoing training in global beauty trends.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+        <h3>Premium Products</h3>
+        <p>We use only luxury, cruelty-free products that nourish your skin and hair from the inside out.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon"><i class="fas fa-spa"></i></div>
+        <h3>Holistic Experience</h3>
+        <p>From the moment you arrive, every detail is curated for your comfort, relaxation, and transformation.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon"><i class="fas fa-heart"></i></div>
+        <h3>Personalized Care</h3>
+        <p>Every client receives a bespoke consultation ensuring treatments perfectly suited to your unique needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="fade-in"><div class="stat-num">12<span class="stat-plus">+</span></div><div class="stat-label">Years of Excellence</div></div>
+    <div class="fade-in"><div class="stat-num">8K<span class="stat-plus">+</span></div><div class="stat-label">Happy Clients</div></div>
+    <div class="fade-in"><div class="stat-num">24</div><div class="stat-label">Expert Stylists</div></div>
+    <div class="fade-in"><div class="stat-num">98<span class="stat-plus">%</span></div><div class="stat-label">Client Satisfaction</div></div>
+  </div>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="section services-bg">
+    <div class="services-intro">
+      <div class="fade-left">
+        <p class="section-label">Our Services</p>
+        <h2 class="section-title">Signature <em>Treatments</em></h2>
+      </div>
+      <a href="pages/services.html" class="btn-primary fade-right">View All Services</a>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-img s-hair"><div class="service-img-inner">✂️</div><div class="service-badge">Popular</div></div>
+        <div class="service-body">
+          <h3>Hair Styling</h3>
+          <p>Cuts, blowouts, and styling crafted to enhance your natural beauty and reflect your personality.</p>
+          <div class="service-meta"><span class="service-price">₹800+</span><span class="service-duration">⏱ 45–90 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-img s-makeup"><div class="service-img-inner">💄</div></div>
+        <div class="service-body">
+          <h3>Makeup Artistry</h3>
+          <p>From natural glam to bold editorial looks — we make you feel extraordinary for every occasion.</p>
+          <div class="service-meta"><span class="service-price">₹1,500+</span><span class="service-duration">⏱ 60–90 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-img s-spa"><div class="service-img-inner">🛁</div><div class="service-badge">Trending</div></div>
+        <div class="service-body">
+          <h3>Luxury Spa</h3>
+          <p>Deep relaxation through premium body treatments, aromatherapy, and therapeutic massages.</p>
+          <div class="service-meta"><span class="service-price">₹2,000+</span><span class="service-duration">⏱ 90–120 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-bg">
+    <div class="testimonials-inner">
+      <p class="section-label t-label fade-in">Client Love</p>
+      <h2 class="section-title t-title fade-in">Words That <em>Inspire</em> Us</h2>
+      <div class="testimonial-track">
+        <div class="testimonial-slider" id="tSlider">
+          <div class="testimonial-card"><div class="t-stars">★★★★★</div><p class="t-text">"Velour completely transformed my look before my wedding. The team is incredibly talented and made me feel like royalty throughout the entire experience."</p><div class="t-author"><div class="t-avatar">P</div><div><div class="t-name">Priya Sharma</div><div class="t-role">Bridal Client</div></div></div></div>
+          <div class="testimonial-card"><div class="t-stars">★★★★★</div><p class="t-text">"The best facial I have ever had in my life. My skin has never felt this soft and glowing. I am now a loyal client and I visit every month without fail."</p><div class="t-author"><div class="t-avatar">A</div><div><div class="t-name">Ananya Gupta</div><div class="t-role">Skin Care Client</div></div></div></div>
+          <div class="testimonial-card"><div class="t-stars">★★★★★</div><p class="t-text">"Absolutely stunning results for my hair color transformation. The stylist truly listened and delivered exactly what I envisioned — and then some."</p><div class="t-author"><div class="t-avatar">R</div><div><div class="t-name">Riya Malhotra</div><div class="t-role">Hair Color Client</div></div></div></div>
+          <div class="testimonial-card"><div class="t-stars">★★★★★</div><p class="t-text">"The spa package was divine. Every therapist was professional and attentive. I left feeling completely rejuvenated. Will absolutely be back again."</p><div class="t-author"><div class="t-avatar">S</div><div><div class="t-name">Sneha Kapoor</div><div class="t-role">Spa Client</div></div></div></div>
+        </div>
+      </div>
+      <div class="t-controls">
+        <button class="t-btn" onclick="slideT(-1)"><i class="fas fa-arrow-left"></i></button>
+        <button class="t-btn" onclick="slideT(1)"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section">
+    <div class="fade-in" style="text-align:center">
+      <p class="section-label">Our Gallery</p>
+      <h2 class="section-title">Moments of <em>Beauty</em></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item"><div class="gallery-inner g1">💆‍♀️</div><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+      <div class="gallery-item"><div class="gallery-inner g2" style="min-height:180px">💅</div><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+      <div class="gallery-item"><div class="gallery-inner g3" style="min-height:180px">💄</div><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+      <div class="gallery-item"><div class="gallery-inner g4" style="min-height:190px">✂️</div><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+      <div class="gallery-item"><div class="gallery-inner g5" style="min-height:190px">🧴</div><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+      <div class="gallery-item"><div class="gallery-inner g6" style="min-height:190px">👰</div><div class="gallery-overlay"><i class="fas fa-expand"></i></div></div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-section fade-in">
+    <h2>Ready for Your <em>Transformation?</em></h2>
+    <p>Book your appointment today and step into a world of luxury, care, and timeless beauty.</p>
+    <a href="#booking" class="btn-primary">Book Your Appointment</a>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="booking-section" id="booking">
+    <div class="booking-grid">
+      <div class="booking-info fade-left">
+        <h2>Book Your <em>Session</em></h2>
+        <p>Reserve your spot at Velour Salon. Our team is ready to craft your perfect look.</p>
+        <div class="booking-detail"><i class="fas fa-map-marker-alt"></i> 42 Fashion Street, Civil Lines, Meerut, UP</div>
+        <div class="booking-detail"><i class="fas fa-phone"></i> +91 9876 543 210</div>
+        <div class="booking-detail"><i class="fas fa-envelope"></i> hello@veloursalon.in</div>
+        <div class="booking-detail"><i class="fas fa-clock"></i> Mon–Sat: 9AM – 8PM</div>
+        <div class="booking-detail"><i class="fas fa-clock"></i> Sunday: 10AM – 6PM</div>
+      </div>
+      <div class="fade-right">
+        <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your beautiful name" /></div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 00000 00000" /></div>
+          <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" /></div>
+        </div>
+        <div class="form-group"><label>Select Service</label>
+          <select>
+            <option>Select a service</option>
+            <option>Hair Styling & Cut</option>
+            <option>Hair Coloring</option>
+            <option>Makeup Artistry</option>
+            <option>Bridal Makeup Package</option>
+            <option>Facial & Skin Treatment</option>
+            <option>Luxury Spa Package</option>
+            <option>Nail Art & Extensions</option>
+            <option>Massage Therapy</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Preferred Date</label><input type="date" /></div>
+          <div class="form-group"><label>Preferred Time</label>
+            <select><option>Select time</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option></select>
+          </div>
+        </div>
+        <div class="form-group"><label>Special Requests</label><textarea placeholder="Any allergies, preferences, or special requests..."></textarea></div>
+        <button class="btn-submit" onclick="confirmBooking()">Confirm Appointment ✦</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Velour<span>.</span></div>
+        <p class="footer-tagline">Where luxury meets artistry. Meerut's most celebrated beauty destination since 2013.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="#booking">Book Appointment</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="pages/services.html">Hair Styling</a></li>
+          <li><a href="pages/services.html">Makeup & Artistry</a></li>
+          <li><a href="pages/services.html">Skin & Facials</a></li>
+          <li><a href="pages/services.html">Nail Art</a></li>
+          <li><a href="pages/services.html">Luxury Spa</a></li>
+          <li><a href="pages/services.html">Bridal Packages</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <div class="hours-row"><span class="day">Monday – Friday</span><span class="time">9AM – 8PM</span></div>
+        <div class="hours-row"><span class="day">Saturday</span><span class="time">9AM – 8PM</span></div>
+        <div class="hours-row"><span class="day">Sunday</span><span class="time">10AM – 6PM</span></div>
+        <div style="margin-top:1.5rem">
+          <h4>Newsletter</h4>
+          <div class="newsletter" style="margin-top:.75rem">
+            <input type="email" placeholder="your@email.com" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Velour Salon. All rights reserved.</span>
+      <span>Designed with ♥ for beauty</span>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- JS -->
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

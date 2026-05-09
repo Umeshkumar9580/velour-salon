@@ -1,0 +1,281 @@
+/* ============================================
+   CARDS.CSS — All Card Components
+   ============================================ */
+
+/* ===== FEATURE CARDS ===== */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.feature-card {
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--beige);
+  position: relative;
+  transition: all 0.4s;
+  cursor: default;
+}
+.feature-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--rose-pale), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.feature-card:hover {
+  border-color: var(--rose-light);
+  transform: translateY(-6px);
+}
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--rose-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.feature-icon i {
+  color: var(--rose-dark);
+  font-size: 1.3rem;
+}
+
+.feature-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: var(--charcoal);
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+.feature-card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== SERVICE FILTERS ===== */
+.service-filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.4rem;
+  border: 1px solid var(--beige);
+  background: transparent;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: var(--transition);
+  color: var(--text-light);
+}
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--rose);
+  border-color: var(--rose);
+  color: #fff;
+}
+
+/* ===== SERVICE CARDS ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(44, 37, 32, 0.12);
+}
+
+.service-img {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.service-img-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  transition: transform 0.6s;
+}
+.service-card:hover .service-img-inner {
+  transform: scale(1.08);
+}
+
+/* Service image gradients */
+.s-hair        { background: linear-gradient(135deg, #E8B4AE, #C9837A); }
+.s-makeup      { background: linear-gradient(135deg, #E2CC96, #C4A35A); }
+.s-nails       { background: linear-gradient(135deg, #D4B8E0, #9B7BB5); }
+.s-spa         { background: linear-gradient(135deg, #A8D5C2, #5A9E87); }
+.s-facial      { background: linear-gradient(135deg, #F5C6C6, #E88888); }
+.s-bridal      { background: linear-gradient(135deg, #F5E0C8, #D4935A); }
+.s-hair-color  { background: linear-gradient(135deg, #C8D8E8, #7A9EC4); }
+.s-massage     { background: linear-gradient(135deg, #D8E8C8, #8AB47A); }
+
+.service-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.3rem 0.8rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--rose-dark);
+}
+
+.service-body {
+  padding: 1.5rem;
+}
+.service-body h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: var(--charcoal);
+  margin-bottom: 0.5rem;
+}
+.service-body p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.service-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: var(--rose-dark);
+}
+.service-duration {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+
+.service-book {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  background: transparent;
+  border: 1px solid var(--beige);
+  padding: 0.65rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  transition: var(--transition);
+  text-align: center;
+  text-decoration: none;
+}
+.service-book:hover {
+  background: var(--rose);
+  border-color: var(--rose);
+  color: #fff;
+}
+
+/* ===== TEAM CARDS ===== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-img {
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.team-img-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  transition: transform 0.5s;
+}
+.team-card:hover .team-img-inner {
+  transform: scale(1.06);
+}
+
+/* Team image gradients */
+.t1 { background: linear-gradient(160deg, #E8B4AE, #C9837A); }
+.t2 { background: linear-gradient(160deg, #E2CC96, #C4A35A); }
+.t3 { background: linear-gradient(160deg, #D4B8E0, #9B7BB5); }
+.t4 { background: linear-gradient(160deg, #A8D5C2, #5A9E87); }
+
+.team-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: var(--charcoal);
+}
+.team-role {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin: 0.3rem 0 0.8rem;
+}
+.team-card p {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.team-social a {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--beige);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: var(--transition);
+}
+.team-social a:hover {
+  background: var(--rose);
+  border-color: var(--rose);
+  color: #fff;
+}

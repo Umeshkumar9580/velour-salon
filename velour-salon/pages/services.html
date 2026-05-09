@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velour Salon Services — Hair, Makeup, Spa, Nails, Bridal and more." />
+  <title>Services — Velour Salon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/sections.css" />
+  <link rel="stylesheet" href="../css/cards.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">Velour<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="#booking">Book Now</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <a href="#booking" class="nav-cta">Book Appointment</a>
+    <button class="hamburger" id="hamBtn" onclick="toggleMobile()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../index.html" onclick="toggleMobile()">Home</a>
+    <a href="about.html" onclick="toggleMobile()">About</a>
+    <a href="services.html" onclick="toggleMobile()">Services</a>
+    <a href="#booking" onclick="toggleMobile()">Book Now</a>
+    <a href="../index.html#contact" onclick="toggleMobile()">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="about-hero">
+    <p class="section-label fade-in">What We Offer</p>
+    <h1 class="section-title fade-in" style="text-align:center;font-size:clamp(2.5rem,5vw,4rem)">Our <em>Services</em></h1>
+    <p class="section-sub fade-in" style="text-align:center;margin:0 auto">Premium treatments crafted to elevate your natural beauty.</p>
+  </div>
+
+  <!-- SERVICES WITH FILTER -->
+  <section class="section services-bg">
+    <div class="service-filters fade-in" id="filterBtns">
+      <button class="filter-btn active" onclick="filterServices('all', this)">All Services</button>
+      <button class="filter-btn" onclick="filterServices('hair', this)">Hair</button>
+      <button class="filter-btn" onclick="filterServices('makeup', this)">Makeup</button>
+      <button class="filter-btn" onclick="filterServices('skin', this)">Skin</button>
+      <button class="filter-btn" onclick="filterServices('nails', this)">Nails</button>
+      <button class="filter-btn" onclick="filterServices('spa', this)">Spa</button>
+      <button class="filter-btn" onclick="filterServices('bridal', this)">Bridal</button>
+    </div>
+
+    <div class="services-grid" id="allServices">
+
+      <!-- HAIR -->
+      <div class="service-card fade-in" data-cat="hair">
+        <div class="service-img s-hair"><div class="service-img-inner">✂️</div><div class="service-badge">Popular</div></div>
+        <div class="service-body">
+          <h3>Hair Styling & Cut</h3>
+          <p>Expert cuts tailored to your face shape, lifestyle, and personality. Blowouts included.</p>
+          <div class="service-meta"><span class="service-price">₹800</span><span class="service-duration">⏱ 45 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in" data-cat="hair">
+        <div class="service-img s-hair-color"><div class="service-img-inner">🎨</div></div>
+        <div class="service-body">
+          <h3>Hair Coloring</h3>
+          <p>Balayage, highlights, global color, and creative coloring using premium Schwarzkopf products.</p>
+          <div class="service-meta"><span class="service-price">₹2,500</span><span class="service-duration">⏱ 2–3 hrs</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in" data-cat="hair">
+        <div class="service-img" style="background:linear-gradient(135deg,#D8C8F0,#A07BC4)"><div class="service-img-inner">💇‍♀️</div></div>
+        <div class="service-body">
+          <h3>Keratin Treatment</h3>
+          <p>Smooth, frizz-free hair with our professional keratin smoothing treatment. Lasts 3–5 months.</p>
+          <div class="service-meta"><span class="service-price">₹3,500</span><span class="service-duration">⏱ 2–3 hrs</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <!-- MAKEUP -->
+      <div class="service-card fade-in" data-cat="makeup">
+        <div class="service-img s-makeup"><div class="service-img-inner">💄</div></div>
+        <div class="service-body">
+          <h3>Party Makeup</h3>
+          <p>Glamorous, long-lasting looks for parties, events, and special occasions. HD finish guaranteed.</p>
+          <div class="service-meta"><span class="service-price">₹1,500</span><span class="service-duration">⏱ 60 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in" data-cat="makeup">
+        <div class="service-img" style="background:linear-gradient(135deg,#F0D8C8,#C4835A)"><div class="service-img-inner">💋</div></div>
+        <div class="service-body">
+          <h3>Airbrush Makeup</h3>
+          <p>Flawless, camera-ready airbrush finish that looks stunning in photos and lasts all day.</p>
+          <div class="service-meta"><span class="service-price">₹2,500</span><span class="service-duration">⏱ 75 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <!-- BRIDAL -->
+      <div class="service-card fade-in" data-cat="bridal">
+        <div class="service-img s-bridal"><div class="service-img-inner">👰</div><div class="service-badge">Premium</div></div>
+        <div class="service-body">
+          <h3>Bridal Package</h3>
+          <p>Complete bridal transformation including hair, makeup, mehendi, and pre-wedding skin prep sessions.</p>
+          <div class="service-meta"><span class="service-price">₹15,000</span><span class="service-duration">⏱ Full Day</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in" data-cat="bridal">
+        <div class="service-img" style="background:linear-gradient(135deg,#F8ECD8,#D4A060)"><div class="service-img-inner">🌺</div></div>
+        <div class="service-body">
+          <h3>Pre-Bridal Package</h3>
+          <p>5-session pre-bridal skin, hair, and body care ritual to prepare you for your special day.</p>
+          <div class="service-meta"><span class="service-price">₹8,000</span><span class="service-duration">⏱ 5 Sessions</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <!-- SKIN -->
+      <div class="service-card fade-in" data-cat="skin">
+        <div class="service-img s-facial"><div class="service-img-inner">✨</div><div class="service-badge">Trending</div></div>
+        <div class="service-body">
+          <h3>Luxury Facial</h3>
+          <p>Deep cleansing, exfoliation, and hydration using premium formulations for radiant skin.</p>
+          <div class="service-meta"><span class="service-price">₹1,800</span><span class="service-duration">⏱ 75 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in" data-cat="skin">
+        <div class="service-img" style="background:linear-gradient(135deg,#C8E8D8,#6AB898)"><div class="service-img-inner">🌸</div></div>
+        <div class="service-body">
+          <h3>Skin Brightening</h3>
+          <p>Targeted treatments to reduce pigmentation, even skin tone, and restore natural radiance.</p>
+          <div class="service-meta"><span class="service-price">₹2,200</span><span class="service-duration">⏱ 60 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in" data-cat="skin">
+        <div class="service-img" style="background:linear-gradient(135deg,#E8D8F0,#B088C8)"><div class="service-img-inner">🧖‍♀️</div></div>
+        <div class="service-body">
+          <h3>Anti-Ageing Treatment</h3>
+          <p>Advanced collagen boosting and anti-ageing facial therapy for a youthful, lifted appearance.</p>
+          <div class="service-meta"><span class="service-price">₹3,000</span><span class="service-duration">⏱ 90 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <!-- NAILS -->
+      <div class="service-card fade-in" data-cat="nails">
+        <div class="service-img s-nails"><div class="service-img-inner">💅</div></div>
+        <div class="service-body">
+          <h3>Nail Art & Extensions</h3>
+          <p>Gel, acrylic, and nail art designs from minimal French tips to elaborate 3D art pieces.</p>
+          <div class="service-meta"><span class="service-price">₹600</span><span class="service-duration">⏱ 45–90 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in" data-cat="nails">
+        <div class="service-img" style="background:linear-gradient(135deg,#F0E8D8,#C8A870)"><div class="service-img-inner">✋</div></div>
+        <div class="service-body">
+          <h3>Luxury Manicure</h3>
+          <p>Deep moisturizing manicure with scrub, mask, massage, and your choice of nail finish.</p>
+          <div class="service-meta"><span class="service-price">₹800</span><span class="service-duration">⏱ 60 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <!-- SPA -->
+      <div class="service-card fade-in" data-cat="spa">
+        <div class="service-img s-spa"><div class="service-img-inner">🛁</div></div>
+        <div class="service-body">
+          <h3>Luxury Spa Package</h3>
+          <p>Full body wrap, aromatherapy, and hot stone massage. A complete sensory escape experience.</p>
+          <div class="service-meta"><span class="service-price">₹3,500</span><span class="service-duration">⏱ 2.5 hrs</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in" data-cat="spa">
+        <div class="service-img s-massage"><div class="service-img-inner">🌿</div></div>
+        <div class="service-body">
+          <h3>Therapeutic Massage</h3>
+          <p>Swedish, deep tissue, and Ayurvedic massage by our certified wellness therapists.</p>
+          <div class="service-meta"><span class="service-price">₹1,200</span><span class="service-duration">⏱ 60 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+      <div class="service-card fade-in" data-cat="spa">
+        <div class="service-img" style="background:linear-gradient(135deg,#D8EEE8,#78B8A8)"><div class="service-img-inner">🪨</div></div>
+        <div class="service-body">
+          <h3>Hot Stone Massage</h3>
+          <p>Volcanic basalt stones melt away tension, improve circulation, and deeply relax the body.</p>
+          <div class="service-meta"><span class="service-price">₹1,800</span><span class="service-duration">⏱ 75 min</span></div>
+          <a href="#booking" class="service-book">Book Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="booking-section" id="booking">
+    <div class="booking-grid">
+      <div class="booking-info fade-left">
+        <h2>Book Your <em>Session</em></h2>
+        <p>Reserve your spot at Velour Salon. Our team is ready to craft your perfect look.</p>
+        <div class="booking-detail"><i class="fas fa-map-marker-alt"></i> 42 Fashion Street, Civil Lines, Meerut, UP</div>
+        <div class="booking-detail"><i class="fas fa-phone"></i> +91 9876 543 210</div>
+        <div class="booking-detail"><i class="fas fa-envelope"></i> hello@veloursalon.in</div>
+        <div class="booking-detail"><i class="fas fa-clock"></i> Mon–Sat: 9AM – 8PM | Sun: 10AM–6PM</div>
+      </div>
+      <div class="fade-right">
+        <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name" /></div>
+        <div class="form-row">
+          <div class="form-group"><label>Phone</label><input type="tel" placeholder="+91" /></div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" /></div>
+        </div>
+        <div class="form-group"><label>Select Service</label>
+          <select>
+            <option>Select a service</option>
+            <option>Hair Styling & Cut</option>
+            <option>Hair Coloring</option>
+            <option>Keratin Treatment</option>
+            <option>Party Makeup</option>
+            <option>Airbrush Makeup</option>
+            <option>Bridal Package</option>
+            <option>Pre-Bridal Package</option>
+            <option>Luxury Facial</option>
+            <option>Skin Brightening</option>
+            <option>Anti-Ageing Treatment</option>
+            <option>Nail Art & Extensions</option>
+            <option>Luxury Manicure</option>
+            <option>Spa Package</option>
+            <option>Therapeutic Massage</option>
+            <option>Hot Stone Massage</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label>Preferred Date</label><input type="date" /></div>
+          <div class="form-group"><label>Preferred Time</label>
+            <select><option>Select time</option><option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option></select>
+          </div>
+        </div>
+        <div class="form-group"><label>Special Requests</label><textarea placeholder="Any allergies, preferences, or special requests..."></textarea></div>
+        <button class="btn-submit" onclick="confirmBooking()">Confirm Appointment ✦</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Velour<span>.</span></div>
+        <p class="footer-tagline">Where luxury meets artistry. Meerut's most celebrated beauty destination since 2013.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="../index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="#booking">Book Appointment</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="#">Hair Styling</a></li><li><a href="#">Makeup</a></li><li><a href="#">Skin & Facials</a></li><li><a href="#">Nail Art</a></li><li><a href="#">Luxury Spa</a></li><li><a href="#">Bridal Packages</a></li></ul></div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <div class="hours-row"><span class="day">Monday – Friday</span><span class="time">9AM – 8PM</span></div>
+        <div class="hours-row"><span class="day">Saturday</span><span class="time">9AM – 8PM</span></div>
+        <div class="hours-row"><span class="day">Sunday</span><span class="time">10AM – 6PM</span></div>
+        <div style="margin-top:1.5rem"><h4>Newsletter</h4><div class="newsletter" style="margin-top:.75rem"><input type="email" placeholder="your@email.com" /><button>Subscribe</button></div></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Velour Salon. All rights reserved.</span><span>Designed with ♥ for beauty</span></div>
+  </footer>
+
+  <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="../js/navbar.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/filter.js"></script>
+  <script src="../js/booking.js"></script>
+</body>
+</html>
