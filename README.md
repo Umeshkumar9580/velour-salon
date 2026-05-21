@@ -19,7 +19,7 @@
 
 <br/>
 
-[🌐 Live Demo](#) &nbsp;·&nbsp; [📸 Screenshots](#-screenshots) &nbsp;·&nbsp; [🚀 Quick Start](#-quick-start) &nbsp;·&nbsp; [📁 File Structure](#-file-structure) &nbsp;·&nbsp; [🛠 Customization](#-customization)
+[🌐 Live Demo](https://velour-salon-02964169-30eb4.web.app/) &nbsp;·&nbsp; [📸 Screenshots](#-screenshots) &nbsp;·&nbsp; [🚀 Quick Start](#-quick-start) &nbsp;·&nbsp; [📁 File Structure](#-file-structure) &nbsp;·&nbsp; [🛠 Customization](#-customization)
 
 <br/>
 
